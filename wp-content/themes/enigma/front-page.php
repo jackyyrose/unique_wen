@@ -11,7 +11,12 @@ if ($wl_theme_options['_frontpage']=="1" && is_front_page())
 	get_template_part('home','portfolio'); 
 	}
 	if($wl_theme_options['show_blog'] == "1") {
-	get_template_part('home','blog');
+	$pCateID = 1;
+	include(locate_template('home-blog.php', false, false)); 
+	$pCateID = 2;
+	include(locate_template('home-blog.php', false, false)); 
+	$pCateID = 3;
+	include(locate_template('home-blog.php', false, false)); 
 	}
 	if($wl_theme_options['fc_home'] == "1") {
 	get_template_part('footer','callout');

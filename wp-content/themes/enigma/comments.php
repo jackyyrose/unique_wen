@@ -37,7 +37,7 @@
 		'title_reply'=> '<h2>'.__('Leave a Reply','enigma').'</h2>',		
 		'role_form'=> 'form',		
 		);
-		comment_form($defaults); ?>		
+		//comment_form($defaults); ?>		
 		
 </div>
 <?php endif; // If registration required and not logged in ?>

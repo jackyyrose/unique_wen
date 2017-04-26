@@ -4,19 +4,11 @@
 <div class="enigma_footer_widget_area">	
 	<div class="container">
 		<div class="row">
-			<?php 
-			if ( is_active_sidebar( 'footer-widget-area' ) ){ 
-				dynamic_sidebar( 'footer-widget-area' );
-			} else 
-			{ 
-			$args = array(
-			'before_widget' => '<div class="col-md-3 col-sm-6 enigma_footer_widget_column">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<div class="enigma_footer_widget_title">',
-			'after_title'   => '<div class="enigma-footer-separator"></div></div>' );
-			the_widget('WP_Widget_Pages', null, $args);			
-			} ?>
-		</div>		
+			<div class="col-md-3 col-sm-6 enigma_footer_widget_column">
+			<div style="color:white; font-size:16px">Navigation:</div>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</div>
+		</div>
 	</div>	
 </div>
 <div class="enigma_footer_area">

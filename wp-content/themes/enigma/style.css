@@ -21,7 +21,7 @@ Text Domain: enigma
 /* Header Section css-------------------------------------------------------------- */ 
 body {
    /* padding:0 30px;*/
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Roboto', sans-serif;
    background-color: #fff;
 
    }
@@ -53,7 +53,7 @@ line-height: 26px;
 .head-contact-info{
 	display: block;
 	text-align: right;
-	padding-top:5px;
+	padding-top:28px;
 	padding-bottom:2px;
 	padding-left:0;
 }
@@ -179,10 +179,11 @@ line-height: 26px;
 }
 
 .enigma_heading_title h3 {
-	font-size: 30px;
-	font-weight: 500;
+	font-size: 52px;
+	color: white;
+	//font-weight: 500;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: bold;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -1233,7 +1234,8 @@ margin-bottom:20px;
 	
 }
 .enigma_blog_post_content p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
 	font-size: 16px;
 	line-height: 27px;
 	margin: 0 0 20px;
@@ -2490,3 +2492,71 @@ padding-top: 20px;
     height: 65% !important;
 }
 }
+
+/* +local style */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.enigma_footer_widget_area .sub-menu li{
+	margin: 0 0 0 30px;
+}
+#home-adv {
+	height: 550px;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
+#home-adv #adv-text-1 {
+	padding-top: 100px;
+	color: white;
+	font-size: 52px;
+	font-weight: bold;
+}
+#home-adv #adv-text-2 {
+	color: white;
+	font-size: 16px;
+	//font-weight: bold;
+}
+#home-adv #adv-text-3 {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	width: 700px;
+	margin: 0 auto;
+}
+#home-adv #adv-break {
+	width: 100px;
+	margin: 40px auto;
+	height: 1px;
+	border: 1px solid white;
+}
+#adv-link button {
+	margin: 20px 30px;
+}
+#adv-link button a{
+	color: #00235B;
+	font-weight: bold;
+}
+.home .enigma_blog_area  button a{
+	color: #00235B;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.home.blog.custom-background {
+	background-image: url("");
+}
+.enigma_blog_post_content p, p span {
+	color: white;
+	font-family: Open Sans !important;
+	font-size: 26px !important;
+}
+.post-template-default .enigma_blog_wrapper {
+	background-color: white;
+}
+/* -local style */

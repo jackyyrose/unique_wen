@@ -52,12 +52,12 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	-webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	-moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	color:#fff;
+	//-webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	//-moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	//box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	color:#E30000;
 	font-family: 'Arimo',Arial, Helvetica, sans-serif;
-	font-weight: normal;
+	font-weight: bold;
 	font-size:15px;
 }
 
@@ -67,9 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	-webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	-moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	//-webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	//-moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	//box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
 	color:#fff;
 	font-family: 'Arimo',Arial, Helvetica, sans-serif;
 	font-weight: normal;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 margin-right:7px;
 }
 .navbar-default .navbar-nav > li > a{
-	color: #000;
+	color: #727272;
 	border-radius: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -87,20 +87,21 @@ margin-right:7px;
 	padding-right: 20px;
 	text-transform: uppercase;
 	font-family: 'Arimo',Arial, Helvetica, sans-serif;
-	font-weight: normal;
+	font-weight: bold;
 	font-size:15px;
+	letter-spacing: 5px;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	-webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	-moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-	color:#fff;
+	//-webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	//-moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	//box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	color:#E30000;
 	font-family: 'Arimo',Arial, Helvetica, sans-serif;
-	font-weight: normal;
+	font-weight: bold;
 	font-size:15px;
 }
 
@@ -125,6 +126,7 @@ margin-right:7px;
 	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	text-transform: uppercase;
 	font-family: 'Arimo',Arial, Helvetica, sans-serif;
+	letter-spacing: 5px;
 }
  
 .dropdown-menu > li > a {
@@ -229,8 +231,8 @@ color: #999;
 .navbar-collapse {
 	max-height: 340px;
 	padding-right: 15px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	overflow-x: visible;
 	-webkit-overflow-scrolling: touch;
 	border-top: 0px solid transparent;

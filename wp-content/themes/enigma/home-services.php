@@ -1,6 +1,6 @@
 <!-- service section -->
 <?php $wl_theme_options = weblizar_get_options(); ?>
-<div class="enigma_service">
+<div class="enigma_service" style="display:none">
 <?php if($wl_theme_options['home_service_heading'] !='') { ?>
 <div class="container">
 	<div class="row">

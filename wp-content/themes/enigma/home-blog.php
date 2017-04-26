@@ -5,17 +5,33 @@ if($wl_theme_options['blog_title'] !='') { ?>
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="enigma_heading_title">
-					<h3><?php echo esc_attr($wl_theme_options['blog_title']); ?></h3>		
+					<h3>
+					<?php
+						if ($pCateID == 1) {
+							echo "Residential Projects";
+						} else if ($pCateID == 2) {
+							echo "Commercial Projects";
+						} else {
+							echo "Industrial Projects";
+						}
+					?>
+					</h3>		
 				</div>
 			</div>
 		</div>
 	</div>
 	<?php } ?>
 	<div class="container">	
-	<div class="row" id="enigma_blog_section">
+	<div class="row" id="enigma_blog_section-<?php echo $pCateID?>">
 	<?php 	if ( have_posts()) : 			
 			$posts_count =wp_count_posts()->publish;
-			$args = array( 'post_type' => 'post','posts_per_page' => $posts_count ,'ignore_sticky_posts' => 1);		
+			if ($pCateID == 1) {
+				$args = array( 'category_name' => 'Residential', 'post_type' => 'post','posts_per_page' => $posts_count ,'ignore_sticky_posts' => 1);
+			} else if ($pCateID == 2) {
+				$args = array( 'category_name' => 'Commercial', 'post_type' => 'post','posts_per_page' => $posts_count ,'ignore_sticky_posts' => 1);
+			} else {
+				$args = array( 'category_name' => 'Industrial', 'post_type' => 'post','posts_per_page' => $posts_count ,'ignore_sticky_posts' => 1);
+			}		
 			$post_type_data = new WP_Query( $args );
 			while($post_type_data->have_posts()):
 			$post_type_data->the_post(); ?>
@@ -92,8 +108,22 @@ if($wl_theme_options['blog_title'] !='') { ?>
 		
 	</div>
 	<div class="enigma_carousel-navi">
-				<div id="port-next" class="enigma_carousel-prev" ><i class="fa fa-arrow-left"></i></div>
-				<div id="port-prev" class="enigma_carousel-next" ><i class="fa fa-arrow-right"></i></div>
+				<div id="port-next-<?php echo $pCateID?>" class="enigma_carousel-prev" ><i class="fa fa-arrow-left"></i></div>
+				<div id="port-prev-<?php echo $pCateID?>" class="enigma_carousel-next" ><i class="fa fa-arrow-right"></i></div>
 	</div>
 	</div>
+	<br>
+	<?php 
+		if ($pCateID == 1) {
+				$text = "RESIDENTIAL";
+				$link = get_site_url() . "/residential";
+			} else if ($pCateID == 2) {
+				$text = "COMMERCIAL";
+				$link = get_site_url() . "/commercial";
+			} else {
+				$text = "INDUSTRIAL";
+				$link = get_site_url() . "/industrial";
+			}
+	?>
+	<div><button type="button" style="margin:0 auto; display:block" class="btn btn-warning"><a href="<?php echo $link; ?>">SEE ALL <?php echo $text; ?> PROJECTS</a></button></div>
 </div>

@@ -45,7 +45,8 @@
 					<?php if($wl_theme_options['upload_image_logo']){ ?>
 						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } else {
-							echo get_bloginfo('name');
+							//echo get_bloginfo('name');
+							echo '<img class="img-responsive" width="200" style="margin-top:10px;" src="' . get_site_url() . '/wp-content/themes/enigma/images/logo.png' . '" />';
 						} ?>
 					</a>
 					<p><?php bloginfo( 'description' ); ?></p>

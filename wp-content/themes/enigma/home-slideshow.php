@@ -1,6 +1,19 @@
+<?php 
+	$wl_theme_options = weblizar_get_options();
+?>
+<div id="home-adv" style='background-image:url("<?php echo $wl_theme_options['slide_image_1']; ?>");'>
+	<div id="adv-text-1" class="animated bounceInRight"><?php echo esc_attr($wl_theme_options['slide_title_1']); ?></div>
+	<div id="adv-text-2" class="animated bounceInLeft"><?php echo esc_attr($wl_theme_options['slide_desc_1']); ?></div>
+	<div id="adv-break" class=""></div>
+	<div id="adv-text-3" class=""><?php echo esc_attr($wl_theme_options['slide_title_2']); ?></div>
+	<div id="adv-link">
+		<button type="button" class="btn btn-warning"><a href="<?php echo get_site_url() . '/contact'; ?>">CONTACT US</a></button>
+		<button type="button" class="btn btn-warning"><a href="<?php echo get_site_url() . '/contact'; ?>">LEARN MORE</a></button>
+	</div>
+</div>
 <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="display:none">
       <div class="carousel-inner">
 	  <?php $wl_theme_options = weblizar_get_options(); 
 $wl_theme_options['slider_image_speed'];
