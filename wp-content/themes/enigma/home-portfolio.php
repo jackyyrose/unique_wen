@@ -17,7 +17,7 @@
 			<div id="enigma_portfolio_section" class="enima_photo_gallery">
 				<?php for($i=1 ; $i<=4; $i++) { ?>
 				<?php if($wl_theme_options['port_'.$i.'_img'] !='') { ?>
-				<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-right d1"> 
+				<div class="col-sm-6 pull-left scrollimation fade-right d1"> 
 					<div class="img-wrapper">
 					
 						<div class="enigma_home_portfolio_showcase">
@@ -25,8 +25,8 @@
 							<div class="enigma_home_portfolio_showcase_overlay">
 								<div class="enigma_home_portfolio_showcase_overlay_inner ">
 									<div class="enigma_home_portfolio_showcase_icons">
-										<a title="<?php echo esc_attr($wl_theme_options['port_'.$i.'_title']); ?>" href="<?php echo esc_url($wl_theme_options['port_'.$i.'_link']); ?>"><i class="fa fa-link" ></i></a>
-										<a class="photobox_a"  href="<?php echo esc_url($wl_theme_options['port_'.$i.'_img']); ?>"><i class="fa fa-search-plus"></i><img src="<?php echo esc_url($wl_theme_options['port_'.$i.'_img']); ?>" alt="<?php echo esc_attr($wl_theme_options['port_'.$i.'_title']); ?>" style="display:none !important;visibility:hidden"></a>
+										<a title="<?php echo esc_attr($wl_theme_options['port_'.$i.'_title']); ?>" href="<?php echo esc_url($wl_theme_options['port_'.$i.'_link']); ?>"><i class="fa fa-link" ></i></a><!--
+										<a class="photobox_a"  href="<?php //echo esc_url($wl_theme_options['port_'.$i.'_img']); ?>"><i class="fa fa-search-plus"></i><img src="<?php //echo esc_url($wl_theme_options['port_'.$i.'_img']); ?>" alt="<?php //echo esc_attr($wl_theme_options['port_'.$i.'_title']); ?>" style="display:none !important;visibility:hidden"></a>-->
 									</div>
 								</div>
 							</div>

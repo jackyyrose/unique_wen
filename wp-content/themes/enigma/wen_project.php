@@ -40,16 +40,16 @@ get_template_part('breadcrums'); ?>
 					<?php the_excerpt( __( 'Read More' , 'enigma' ) ); ?>
 					<a href="<?php the_permalink(); ?>" class="enigma_blog_read_btn"><i class="fa fa-plus-circle"></i><?php _e('Read More','enigma'); ?></a>
 					<div class="enigma_blog_thumb_footer">
-						<ul class="enigma_blog_thumb_date">
-							<li><i class="fa fa-user"></i><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_the_author(); ?></a></li>
+						<ul class="enigma_blog_thumb_date"><!--
+							<li><i class="fa fa-user"></i><a href="<?php //echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php //echo get_the_author(); ?></a></li>-->
 							<li><i class="fa fa-clock-o"></i>
 							<?php if ( ('d M  y') == get_option( 'date_format' ) ) : ?>
 							<?php echo get_the_date('F d ,Y'); ?>
 							<?php else : ?>
 							<?php echo get_the_date(); ?>
 							<?php endif; ?>
-							</li>
-							<li><i class="fa fa-comments-o"></i><?php comments_popup_link( '0', '1', '%', '', '-'); ?></li>
+							</li><!--
+							<li><i class="fa fa-comments-o"></i><?php //comments_popup_link( '0', '1', '%', '', '-'); ?></li>-->
 						</ul>
 					</div>
 				</div>
