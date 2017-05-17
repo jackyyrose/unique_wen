@@ -8,6 +8,9 @@
 			<div style="color:white; font-size:16px">Navigation:</div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</div>
+			<div class="col-md-3 col-sm-6 enigma_footer_widget_column">
+				<img  src="http://www.unique16.com/wp-content/themes/enigma/images/member-logo.png" alt="Site Safe Member" height="150" width="316">
+			</div>
 		</div>
 	</div>	
 </div>

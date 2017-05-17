@@ -289,7 +289,7 @@ endif;
     $home = __('Home', 'enigma' ); // text for the 'Home' link
     $before = '<li>'; // tag before the current crumb
     $after = '</li>'; // tag after the current crumb
-    echo '<ul class="breadcrumb">';
+    echo '<ul class="breadcrumb" style="display:none;">';
     global $post;
     $homeLink = home_url();
     echo '<li><a href="' . $homeLink . '">' . $home . '</a></li>' . $delimiter . ' ';

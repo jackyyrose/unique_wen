@@ -28,7 +28,7 @@ get_template_part('breadcrums'); ?>
 						<div class="enigma_blog_thumb_wrapper_showcase_overlay">
 							<div class="enigma_blog_thumb_wrapper_showcase_overlay_inner ">
 								<div class="enigma_blog_thumb_wrapper_showcase_icons">
-									<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><i class="fa fa-link"></i></a>
+									<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">Read More</a>
 								</div>
 							</div>
 						</div>

@@ -49,17 +49,20 @@ if (isset($_POST['submit'])) {
 </font>
 
 <font color="white">
+<div style="margin-left:200px;>
 <form method="post" id="contactus_form">
-Your Name:<br><input style="color: #000;" type="text" name="yourname" id="yourname" rows="1" value="" />
+Your Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Email:<br>
+<input style="color: #000;width: 200px;" type="text" name="yourname" id="yourname" rows="1" value="" />
+
+<input  style="color: #000;margin-left:20px;width: 280px;" type="text" name="email" id="email" rows="1" value="" />
 <br /><br />
-Your Email:<br><input  style="color: #000;" type="text" name="email" id="email" rows="1" value="" />
-<br /><br />
-Subject:<br><input  style="color: #000;" type="text" name="subject" id="subject" rows="1" value=""></p>
+Subject:<br><input  style="color: #000;width: 500px; " type="text" name="subject" id="subject" rows="1" value="">
 <br /><br />
 Leave a Message:<br><textarea name="message" id="message" style="color: #000; width: 500px; height:300px;"></textarea>
-<br /><br />
+<br />
 <input class="btn btn-info" type="submit" name="submit" id="submit" value="Send"/>
 </form>
+</div>
 </font>
 
 <br>

@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #header_shadow {
-	background: url('../images/shadow.png') no-repeat top center;
+	background: url('../images/shadow.png') no-repeat top center; 
 	position: absolute;
 	top:100%;
 	left: 0;
@@ -319,14 +319,14 @@ color: #999;
 
 .enigma_header_breadcrum_title{
 	margin-bottom:70px;
-	background:#edf0f2;
+	background:rgba(255, 255, 255, 0);
 	opacity:1;
 	padding-top:8px;
 	padding-bottom:8px;
 	
 }
 .enigma_header_breadcrum_title h1{
-	color:#777777;
+	color: #ffffff;
 }
 .breadcrumb {
 	font-size: 17px;

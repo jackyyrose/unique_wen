@@ -8,7 +8,7 @@
 	<div id="adv-text-3" class=""><?php echo esc_attr($wl_theme_options['slide_title_2']); ?></div>
 	<div id="adv-link">
 		<button type="button" class="btn btn-warning"><a href="<?php echo get_site_url() . '/contact'; ?>">CONTACT US</a></button>
-		<button type="button" class="btn btn-warning"><a href="<?php echo get_site_url() . '/contact'; ?>">LEARN MORE</a></button>
+		<button type="button" class="btn btn-warning"><a href="<?php echo get_site_url() . '/services'; ?>">LEARN MORE</a></button>
 	</div>
 </div>
 <!-- Carousel
